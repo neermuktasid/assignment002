@@ -308,7 +308,9 @@ main{
     
 
 }
-
+.mobile-display{
+    display: none;
+}
 @media screen and (max-width:576px){
     .primary-text{
     font-size: 14px;
@@ -347,6 +349,9 @@ main{
         width: 63px;
         height: 38px;
     }
+    .nav-item{
+    font-size: 16px;
+}
 
     .our-plants{
         margin-bottom: -150px;
@@ -378,6 +383,7 @@ main{
     .trusted-seller-title br{
         display: none;
     }
+
     .trusted-badge{
         display: none;
     }
@@ -398,6 +404,10 @@ main{
     }
     .latest-deal-discount{
         flex-direction: column;
+    }
+    .latest-deals-title{
+        font-size: 24px;
+        padding-bottom: 13px;
     }
     .discount-3{
     background-image: url("../images/deal-zabo.png"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
@@ -452,6 +462,16 @@ main{
     }
     .social-media{
         padding-left: 20px;
+    }
+    .mobile-display{
+        max-width: 391px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .net-wifi-bat i{
+        margin-right: 3px;
     }
 }
 
