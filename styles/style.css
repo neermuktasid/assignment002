@@ -40,14 +40,19 @@ body{
     color: rgba(0, 0, 0, 0.5);
 }
 
-.section-title{
+.text-center{
+    text-align: center;
+}
 
+.section-title{
+    font-size: 45px;
+    font-weight: 800;
 }
 
 
 /* navbar styles */
 .navbar{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -64,16 +69,26 @@ body{
     list-style: none;
     font-size: 14px;
 }
+main{
+    width: 1140px;
+    margin: 0 auto;
+}
 
 
 /* banner styles */
 .banner{
-    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    max-width: 1140px;
     height: 461px;
     margin: 0 auto;
     margin-top: 120px;
     align-items: flex-end;
 
+}
+
+.banner-image{
+    width: 100%;
 }
 .banner-details{
     width: 570px;
@@ -85,16 +100,173 @@ body{
     margin-bottom: -50px;
 }
 
-.banner-description{
 
+/* our plants section style */
+.our-plants{
+    margin-top: 100px;
+}
+.our-plants-title{
+    text-align: center;
+    margin-bottom: -35px;
+}
+.our-plants-description{
+    text-align: center;
+    max-width: 888px;
+    margin: 0 auto;
+}
+
+.plants-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.plants-name{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: -10px;
+}
+
+.plants-price{
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.plants-btn{
+    padding: 19px 80px;
+    background-color: #E95A08;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
 }
 
 
 
+/* trusted seller styles */
+.trusted-seller{
+    margin-top: 200px;
+    gap: 60px;
+}
+.trusted-seller-details{
+    margin-left: 0;
+}
+.trusted-badge{
+    width: 286px;
+    height: 286px;
+    position: relative;
+    top: -740px;
+    left: 360px;
+    
+}
+
+/* latest-deals styls */
+.latest-deals-details{
+    
+    max-width: 888px;
+    margin: 0 auto;
+    margin-top: -200px;
+}
+
+.latest-deals-title{
+    margin-bottom: -35px;
+}
+
+/* latest-deal-discount styles */
+
+
+.latest-deal-discount{
+    justify-content: space-between;
+    gap: 20px;
+}
+.discount-1{
+    background-image: url("../images/deal-bloom.png"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 367px;
+    height: 206px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+
+}
+.discount-title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-top: 64px;
+    margin-bottom: 20px;
+}
+.discount-link{
+    color: white;
+}
+.discount-link-2{
+    font-size: 28px;
+    color: white;
+}
+.discount-title-2{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 0px;
+    padding-top: 172px;
+}
+.discount-2{
+    background-image: url("../images/deal-ana.png"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 367px;
+    height: 206px;
+    border-radius: 14px;
+
+}
+
+.discount-3{
+    background-image: url("../images/deal-zabo.png"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 753px;
+    height: 437px;
+    border-radius: 22px;
+
+}
+
+.discount-column-1{
+    margin-top: 25px;
+}
+
 @media screen and (max-width:576px){
+    .primary-text{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
     .hidden{
     display: none;
     }
+    .banner-details{
+        max-width: 361px;
+        margin: 0 auto;
+    order: 2;
+    }
+    .banner{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 0;
+    }
+    
+    .banner img{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 24px;
+        padding-bottom: 13px;
+    }
+
 
     .navbar{
     width: 361px;
@@ -107,6 +279,86 @@ body{
         width: 63px;
         height: 38px;
     }
+
+    .our-plants{
+        margin-bottom: -150px;
+    }
+    .plants-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    }
+    .plants img{
+        width: 100%;
+    }
+    .our-plants-title{
+        font-size: 24px;
+        padding-bottom: 13px;
+    }
+
+    .trusted-seller{
+        flex-direction: column;
+        
+    }
+    .trusted-image{
+        width: 100%;
+        margin-bottom: -70px;
+    }
+    .trusted-seller-title{
+        font-size: 24px;
+    }
+    .trusted-seller-title br{
+        display: none;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .plants-name{
+    font-size: 16px;
+    }
+
+    .plants-price{
+        font-size: 16px;
+    }
+    .plants-btn{
+    padding: 19px 30px;
+    background-color: #E95A08;
+    font-size: 15px;
+}
+    .latest-deals{
+        margin-top: 300px;
+    }
+    .latest-deal-discount{
+        flex-direction: column;
+    }
+    .discount-3{
+    background-image: url("../images/deal-zabo.png"), linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 367px;
+    height: 206px;
+    border-radius: 14px;
+    margin-top: -18px;
+
+    }
+    .discount-title-2{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding-top: 64px;
+    margin-bottom: 20px;
+    }
+    .discount-link-2{
+    font-size: 16px;
+    color: white;
+}
+    main{
+        max-width: 393px;
+        margin: 0 auto;
+    }
+
 }
 
 
